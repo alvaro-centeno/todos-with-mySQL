@@ -1,5 +1,4 @@
-const connection = require("./connection")
-
+const connection = require("./connection");
 const seeAllTodos = () => {
     return new Promise((resolve, reject) => {
         connection.query("SELECT * FROM todos", (err, data) => {
